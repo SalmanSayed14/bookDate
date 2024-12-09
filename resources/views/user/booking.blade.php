@@ -23,10 +23,8 @@
                 <li>
                     Booking Date: {{ $booking->booking_date }} - Status: {{ $booking->status }} - letter: {{ $booking->user_letter }} - Admin letter:
                     @if($booking->admin_letter)
-        <!-- If admin letter exists, display it -->
         {{ $booking->admin_letter }}
     @else
-        <!-- If no admin letter, show the default message -->
         No letter from the admin.
     @endif
                 </li>

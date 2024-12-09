@@ -9,10 +9,8 @@ class Booking extends Model
 {
     use HasFactory;
 
-    // The table associated with the model
     protected $table = 'bookings';
 
-    // The attributes that are mass assignable
     protected $fillable = [
         'user_id', 'booking_date', 'status', 'admin_letter', 'user_letter',
     ];

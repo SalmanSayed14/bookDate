@@ -16,8 +16,8 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->date('booking_date');
             $table->enum('status', ['pending', 'confirmed', 'rejected'])->default('pending');
-            $table->text('admin_letter')->nullable();  // Admin's letter field
-            $table->text('user_letter')->nullable();   // User's letter field
+            $table->text('admin_letter')->nullable(); 
+            $table->text('user_letter')->nullable();   
             $table->timestamps();
         });
     }
