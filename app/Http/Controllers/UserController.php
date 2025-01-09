@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     public function showBookingForm()
     {
-        $bookings = Auth::user()->bookings; // or you can use ->with('bookings') if necessary
+        $bookings = Auth::user()->bookings;
         
         return view('user.booking', compact('bookings'));
     }
