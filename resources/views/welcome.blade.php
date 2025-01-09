@@ -59,7 +59,6 @@
             font-size: 1.25rem;
         }
 
-        /* Footer */
         footer {
             background-color: #ffffff;
             padding: 20px 0;
@@ -67,7 +66,6 @@
             color: #718096;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             header {
                 padding: 10px;
@@ -107,7 +105,6 @@
                             User Dashboard
                         </a>
                     @elseif(Auth::user()->usertype == 'admin')
-                        <!-- Admin Dashboard link -->
                         <a href="{{ url('/admin') }}" 
                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
                             Admin Dashboard

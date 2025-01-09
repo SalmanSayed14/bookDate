@@ -25,7 +25,7 @@ class UserController extends Controller
 
         Auth::user()->bookings()->create([
             'booking_date' => $request->booking_date,
-            'status' => 'pending',  // Default status
+            'status' => 'pending', 
             'user_letter' => $request->user_letter, 
         ]);
 
